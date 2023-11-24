@@ -22,5 +22,7 @@ setup(name='vSphere Automation SDK',
         'nsx-vmc-policy-python-sdk @ file://localhost/{}/lib/nsx-vmc-policy-python-sdk/nsx_vmc_policy_python_sdk-3.1.2.1.1-py2.py3-none-any.whl'.format(os.getcwd()),
         'nsx-vmc-aws-integration-python-sdk @ file://localhost/{}/lib/nsx-vmc-aws-integration-python-sdk/nsx_vmc_aws_integration_python_sdk-3.1.2.1.1-py2.py3-none-any.whl'.format(os.getcwd()),
         'vmc-draas-client-bindings @ file://localhost/{}/lib/vmc-draas-client-bindings/vmc_draas_client_bindings-1.18.0-py2.py3-none-any.whl'.format(os.getcwd()),
-      ]
+      ],
+      # explicitly declare packages so setuptools does not attempt auto discovery
+      packages=[]
       )
